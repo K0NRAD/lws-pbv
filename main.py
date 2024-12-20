@@ -1,6 +1,5 @@
 import pyaudio
 import wave
-import numpy as np
 import whisper
 import os
 import threading
@@ -13,6 +12,7 @@ RECORDINGS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "recor
 
 if not os.path.exists(RECORDINGS_DIR):
     os.makedirs(RECORDINGS_DIR)
+
 
 class AudioRecorder:
     def __init__(self):
